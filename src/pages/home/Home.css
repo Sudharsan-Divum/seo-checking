@@ -1,0 +1,14 @@
+.home-container{
+    background-color: #2b9296;
+    color: azure;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 95.3vh;
+    flex-direction: column;
+}
+
+.para{
+    color: #ebeb00;
+    font-size: 26px;
+}
