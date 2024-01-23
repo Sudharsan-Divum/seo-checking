@@ -1,0 +1,14 @@
+.details-container {
+  background-color: bisque;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95.3vh;
+  flex-direction: column;
+}
+
+.para-2 {
+  color: #0081eb;
+  font-size: 26px;
+}
