@@ -16,7 +16,7 @@ export default function App() {
         />
         <meta
           name="keywords"
-          content="poc, POC, this, that, entry, nav, inin,rro,sseeoo"
+          content="poc,POC,this,that,entry,nav,inin,rro,sseeoo,poc-seo,sonic-poke"
         />
       </Helmet>
       <Routing />
