@@ -1,0 +1,14 @@
+{
+  "/": {
+    "title": "Home",
+    "content": "Serendipity,Mellifluous,Quixotic,Ephemeral,Resplendent,Ubiquitous,Pernicious,Labyrinthine,Effervescent,Nebulous"
+  },
+  "/next": {
+    "title": "Details",
+    "content": "Opulent,Enigmatic,Tranquil,Voracious,Harmonious,Perspicacious,Ineffable,Obfuscate,Equanimity,Inscrutable"
+  },
+  "/contact": {
+    "title": "Contact",
+    "content": "Pulchritudinous,Obfuscate,Ineffable,Sonorous,Ephemeral,Mellifluous,Cacophony,Quixotic,Insouciant,Resplendent"
+  }
+}
