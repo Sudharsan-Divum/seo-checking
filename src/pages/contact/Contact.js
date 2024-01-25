@@ -2,7 +2,6 @@ import React from "react";
 import "./contact.css";
 import Navbar from "../../components/NavBar/navbar";
 import { Helmet } from "react-helmet-async";
-import dynamicKeywords from "../../keywords/dynamicKeywords.json";
 
 export default function Contact({
   title,
