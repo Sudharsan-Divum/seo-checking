@@ -21,8 +21,8 @@ const App = () => {
                 element={
                   <Home
                     title={dynamicKeywords["/"].title}
-                    description="This is a description only for the Home page"
-                    canonicalUrl="https://example.com/Home"
+                    description={dynamicKeywords["/"].description}
+                    canonicalUrl={dynamicKeywords["/"].canonicalUrl}
                     keywords={getKeywords("/")}
                   />
                 }
@@ -32,8 +32,8 @@ const App = () => {
                 element={
                   <Details
                   title={dynamicKeywords["/next"].title}
-                    description="This is a description only for the Detail page"
-                    canonicalUrl="https://example.com/details"
+                    description={dynamicKeywords["/next"].description}
+                    canonicalUrl={dynamicKeywords["/next"].canonicalUrl}
                     keywords={getKeywords("/next")}
                   />
                 }
@@ -43,8 +43,8 @@ const App = () => {
                 element={
                   <Contact
                   title={dynamicKeywords["/contact"].title}
-                    description="This is a description for contact pages"
-                    canonicalUrl="https://example.com/contact"
+                    description={dynamicKeywords["/contact"].description}
+                    canonicalUrl={dynamicKeywords["/contact"].canonicalUrl}
                     keywords={getKeywords("/contact")}
                   />
                 }

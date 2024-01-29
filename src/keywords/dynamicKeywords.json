@@ -1,14 +1,20 @@
 {
   "/": {
     "title": "Home",
-    "content": "Serendipity,Mellifluous,Quixotic,Ephemeral,Resplendent,Ubiquitous,Pernicious,Labyrinthine,Effervescent,Nebulous"
+    "content": "Serendipity,Mellifluous,Quixotic,Ephemeral,Resplendent,Ubiquitous,Pernicious,Labyrinthine,Effervescent,Nebulous",
+    "description" :"This is a description only for the Home page",
+    "canonicalUrl": "https://example.com/Home"
   },
   "/next": {
     "title": "Details",
-    "content": "Opulent,Enigmatic,Tranquil,Voracious,Harmonious,Perspicacious,Ineffable,Obfuscate,Equanimity,Inscrutable"
+    "content": "Opulent,Enigmatic,Tranquil,Voracious,Harmonious,Perspicacious,Ineffable,Obfuscate,Equanimity,Inscrutable",
+    "description": "This is a description only for the Details page",
+    "canonicalUrl": "https://example.com/next"
   },
   "/contact": {
     "title": "Contact",
-    "content": "Pulchritudinous,Obfuscate,Ineffable,Sonorous,Ephemeral,Mellifluous,Cacophony,Quixotic,Insouciant,Resplendent"
+    "content": "Pulchritudinous,Obfuscate,Ineffable,Sonorous,Ephemeral,Mellifluous,Cacophony,Quixotic,Insouciant,Resplendent",
+    "description":"This is a description for contact pages",
+    "canonicalUrl": "https://example.com/contact"
   }
 }
