@@ -7,7 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import dynamicKeywords from "./keywords/dynamicKeywords.json";
 const App = () => {
   const getKeywords = (path) => {
-    return dynamicKeywords[path]?.content || "";
+    return dynamicKeywords[path]?.keywords || "";
   };
 
   return (
@@ -22,7 +22,6 @@ const App = () => {
                   <Home
                     title={dynamicKeywords["/"].title}
                     description={dynamicKeywords["/"].description}
-                    canonicalUrl={dynamicKeywords["/"].canonicalUrl}
                     keywords={getKeywords("/")}
                   />
                 }
@@ -31,9 +30,8 @@ const App = () => {
                 path="/next"
                 element={
                   <Details
-                  title={dynamicKeywords["/next"].title}
+                    title={dynamicKeywords["/next"].title}
                     description={dynamicKeywords["/next"].description}
-                    canonicalUrl={dynamicKeywords["/next"].canonicalUrl}
                     keywords={getKeywords("/next")}
                   />
                 }
@@ -42,9 +40,8 @@ const App = () => {
                 path="/contact"
                 element={
                   <Contact
-                  title={dynamicKeywords["/contact"].title}
+                    title={dynamicKeywords["/contact"].title}
                     description={dynamicKeywords["/contact"].description}
-                    canonicalUrl={dynamicKeywords["/contact"].canonicalUrl}
                     keywords={getKeywords("/contact")}
                   />
                 }
