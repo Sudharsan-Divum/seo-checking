@@ -13,7 +13,7 @@ export default function Navbar() {
           Home{" "}
         </Link>
         <Link
-          to="/next"
+          to="/details"
           style={{ color: "#fff", textDecoration: "none", fontSize: "24px" }}
         >
           {" "}

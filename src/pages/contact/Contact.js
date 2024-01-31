@@ -1,23 +1,13 @@
 import React from "react";
 import "./contact.css";
 import Navbar from "../../components/NavBar/navbar";
-import { Helmet } from "react-helmet-async";
+import HelmetCaller from "../../components/helmetCallerCompoenent/HelmetCaller";
 
-export default function Contact({
-  title,
-  description,
-  canonicalUrl,
-  keywords,
-}) {
+export default function Contact() {
   return (
     <>
       <div>
-        <Helmet>
-          <title> {title} | Contact Page </title>
-          <meta name="description" content={description} />
-          <link rel="canonical" href={canonicalUrl} />
-          <meta name="keywords" content={keywords} />
-        </Helmet>
+        <HelmetCaller />
         <Navbar />
         <div className="contact-container">
           <h1> This is the Contact Page </h1>

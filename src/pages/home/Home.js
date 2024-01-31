@@ -2,24 +2,19 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/NavBar/navbar";
-import { Helmet } from "react-helmet-async";
+import HelmetCaller from "../../components/helmetCallerCompoenent/HelmetCaller";
 
-export default function Home({title, description, canonicalUrl, keywords}) {
+export default function Home() {
   return (
     <>
-      <Helmet>
-      <title> {title} | Home  Page </title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={canonicalUrl} />
-        <meta name="keywords" content={keywords} />
-      </Helmet>
+     <HelmetCaller />
       <Navbar />
       <div className="home-container">
         <h1> Home </h1>
         <p className="para">
           {" "}
           Please Click here to navigate to {""}
-          <Link to="/next"> Details </Link>{" "}
+          <Link to="/details"> Details </Link>{" "}
         </p>
       </div>
     </>
