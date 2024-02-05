@@ -6,8 +6,8 @@ const sitemapStream = new SitemapStream({
 });
 
 sitemapStream.write({ url: "/", changefreq: "daily", priority: 1 });
-sitemapStream.write({ url: "/about", changefreq: "monthly", priority: 0.8 });
-sitemapStream.write({ url: "/contact", changefreq: "monthly", priority: 0.8 });
+sitemapStream.write({ url: "/details", changefreq: "daily", priority: 0.9 });
+sitemapStream.write({ url: "/contact", changefreq: "daily", priority: 0.9 });
 
 sitemapStream.end();
 streamToPromise(sitemapStream).then((sitemap) => {

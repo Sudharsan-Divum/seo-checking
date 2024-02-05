@@ -3,18 +3,58 @@ import Navbar from "../../components/NavBar/navbar";
 import "./Details.css";
 import React from "react";
 import HelmetCaller from "../../components/helmetCallerCompoenent/HelmetCaller";
+import phone from "../../images/phone.png";
+import { Helmet } from "react-helmet-async";
+import product from "../../data/productDetails.json";
 
 export default function Details() {
   return (
     <>
       <>
         <HelmetCaller />
+        <Helmet>
+          <script type="application/ld+json">
+            {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              "name": "${product.name}",
+              "image": ["${product.image}"],
+              "description": "${product.description}",
+              "price" :" ${product.price}",
+              "offers": {
+                "@type": "Offer",
+                "price": "${product.offerPrice}",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock" 
+              }
+            }
+            `}
+          </script>
+        </Helmet>
         <Navbar />
         <div className="details-container">
           <h1>Details</h1>
-          <p className="para-2">
-            Please click here to navigate back <Link to="/">Home</Link>
-          </p>
+          <div className="product-card">
+            <img src={phone} alt="Phone" className="product-image" />
+            <div className="product-details">
+              <h2>{product.name}</h2>
+              <p>{product.description}</p>
+              <p>
+                Price:{" "}
+                <span style={{ textDecoration: "line-through", color: "red" }}>
+                  {product.price}
+                </span>
+              </p>
+              <p>
+                Offer Price:{" "}
+                <span style={{ color: "green" }}> {product.offerPrice}</span>
+              </p>
+              <p>
+                Click Here for <Link to="/contact">Details</Link>
+              </p>
+            </div>
+          </div>
         </div>
       </>
     </>

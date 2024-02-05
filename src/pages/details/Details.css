@@ -1,11 +1,12 @@
 .details-container {
-  background-color: bisque;
+  background-color: #bead97;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95.3vh;
+  height: 100%;
   flex-direction: column;
+  padding-bottom: 12px;
 }
 
 .para-2 {
