@@ -3,7 +3,6 @@ import Navbar from "../../components/NavBar/navbar";
 import "./Details.css";
 import React from "react";
 import HelmetCaller from "../../components/helmetCallerCompoenent/HelmetCaller";
-import phone from "../../images/phone.png";
 import { Helmet } from "react-helmet-async";
 import product from "../../data/productDetails.json";
 
@@ -32,7 +31,34 @@ export default function Details() {
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock" 
               },
-              "review" : "${product.review}",
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": "Ellie",
+                  "datePublished": "2011-04-01",
+                  "reviewBody": "The Phone not worth the price, its get damaged easily. Its getting slow day by day ",
+                  "name": "Not a happy customer",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "1",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "Review",
+                  "author": "Lucas",
+                  "datePublished": "2011-03-25",
+                  "reviewBody": "The product is worth the price, within this budget the camera was awesome.",
+                  "name": "Value purchase",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "bestRating": "5",
+                    "ratingValue": "4",
+                    "worstRating": "1"
+                  }
+                }
+              ],
               "aggregateRating": "${product.aggregateRating}",
             }
             `}
@@ -42,7 +68,7 @@ export default function Details() {
         <div className="details-container">
           <h1>Details</h1>
           <div className="product-card">
-            <img src={phone} alt="Phone" className="product-image" />
+            <img src={product.image} alt="Phone" className="product-image" />
             <div className="product-details">
               <h2>{product.name}</h2>
               <p>{product.description}</p>

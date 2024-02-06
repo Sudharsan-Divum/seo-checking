@@ -9,34 +9,6 @@
     "name": "MyBrand"
   },
   "description": "Sitel's annual phone unveiling is akin to a grand spectacle in the world of tech, drawing anticipation akin to the arrival of royalty at a ball. Picture this year's event: the company's triumphant return to in-person product launches after the pandemic hiatus. Amidst the buzz and excitement, the iPhone 14 and its illustrious sibling, the iPhone 14 Plus, strutted onto the stage, ready to steal the spotlight amidst a sea of new releases. ",
-  "review": [
-    {
-      "@type": "Review",
-      "author": "Ellie",
-      "datePublished": "2011-04-01",
-      "reviewBody": "The Phone not worth the price, its get damaged easily. Its getting slow day by day ",
-      "name": "Not a happy customer",
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": "5",
-        "ratingValue": "1",
-        "worstRating": "1"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": "Lucas",
-      "datePublished": "2011-03-25",
-      "reviewBody": "The product is worth the price, within this budget the camera was awesome.",
-      "name": "Value purchase",
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": "5",
-        "ratingValue": "4",
-        "worstRating": "1"
-      }
-    }
-  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "3.5",
