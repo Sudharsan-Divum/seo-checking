@@ -17,18 +17,25 @@ export default function Home() {
             {
               "@context": "https://schema.org/",
               "@type": "Product",
+              "sku": "${product.id}",
               "name": "${product.name}",
+              "gtin": "3hJ9wLpE5DxR7sY",
               "image": ["${product.image}"],
+              "brand" : "${product.brand}",
               "description": "${product.description}",
               "price" :" ${product.price}",
               "offers": {
                 "@type": "Offer",
                 "price": "${product.offerPrice}",
                 "priceCurrency": "INR",
+                "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock" 
               }
+              "review" : "${product.review}",
+              "aggregateRating": "${product.aggregateRating}",
             }
             `}
+          
         </script>
       </Helmet>
       <Navbar />
@@ -42,12 +49,16 @@ export default function Home() {
             <p>
               Price:{" "}
               <span style={{ textDecoration: "line-through", color: "red" }}>
+                {"₹"}
                 {product.price}
               </span>
             </p>
             <p>
               Offer Price:{" "}
-              <span style={{ color: "green" }}> {product.offerPrice}</span>
+              <span style={{ color: "green" }}>
+                {" "}
+                {"₹"} {product.offerPrice}
+              </span>
             </p>
             <p>
               Click Here for <Link to="/details">Details</Link>
