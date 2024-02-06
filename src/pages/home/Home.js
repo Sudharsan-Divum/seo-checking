@@ -31,7 +31,7 @@ export default function Home() {
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock" 
               }
-              "review": [
+              "review": 
                 {
                   "@type": "Review",
                   "author": "Ellie",
@@ -44,9 +44,7 @@ export default function Home() {
                     "ratingValue": "1",
                     "worstRating": "1"
                   }
-                },
-              ],
-              "aggregateRating": "${product.aggregateRating}",
+                }
             }
             `}
           
