@@ -45,19 +45,6 @@ export default function Home() {
                     "worstRating": "1"
                   }
                 },
-                {
-                  "@type": "Review",
-                  "author": "Lucas",
-                  "datePublished": "2011-03-25",
-                  "reviewBody": "The product is worth the price, within this budget the camera was awesome.",
-                  "name": "Value purchase",
-                  "reviewRating": {
-                    "@type": "Rating",
-                    "bestRating": "5",
-                    "ratingValue": "4",
-                    "worstRating": "1"
-                  }
-                }
               ],
               "aggregateRating": "${product.aggregateRating}",
             }
