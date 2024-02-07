@@ -1,8 +1,8 @@
 {
   "id" : "68749ersi8",
   "name": "Sitel 14 maximum",
-  "price": "12,499.99",
-  "offerPrice": "11,599.99",
+  "price": "12499",
+  "offerPrice": "11599",
   "image": "images/phone.png",
   "brand": {
     "@type": "Brand",
