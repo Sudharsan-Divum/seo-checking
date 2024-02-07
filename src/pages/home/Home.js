@@ -31,23 +31,8 @@ export default function Home() {
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock" 
               }
-              "review": 
-                {
-                  "@type": "Review",
-                  "author": "Ellie",
-                  "datePublished": "2011-04-01",
-                  "reviewBody": "The Phone not worth the price, its get damaged easily. Its getting slow day by day ",
-                  "name": "Not a happy customer",
-                  "reviewRating": {
-                    "@type": "Rating",
-                    "bestRating": "5",
-                    "ratingValue": "1",
-                    "worstRating": "1"
-                  }
-                }
             }
             `}
-          
         </script>
       </Helmet>
       <Navbar />
